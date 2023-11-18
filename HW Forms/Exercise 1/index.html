@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework - Working with forms in HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    
+        <h1>Dado Tea Lunch Special</h1>
+        <p>11am - 3am</p>
+        <p>$9.95 plus tax</p><br>
+        <p>Includes sendwich, snack, and drink.</p>
+    
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Order Information</legend>
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" name="name" id="name" required/><br><br>
+
+            
+            <input type="radio" name="coffee" id="here" value="here"/>
+            <label for="here">Here</label><br>
+            <input type="radio" name="coffee" id="ToGo" value="ToGO"/>
+            <label for="ToGO">To Go</label>            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Sandwiches</legend>
+            
+            <p><b>Monday</b></p>
+            <input type="radio" name="sandwich" id="TomatoMozzarella" value="TomatoMozzarella"/>
+            <label for="TomatoMozzarella">Tomato Mozzarella</label><br>
+            <input type="radio" name="sandwich" id="ChickenSalad" value="ChickenSalad"/>
+            <label for="ChickenSalad">Chicken Salad</label>
+
+            <p><b>Tuesday</b></p>
+            <input type="radio" name="sandwich" id="GreekSaladWrap" value="GreekSaladWrap"/>
+            <label for="GreekSaladWrap">Greek Salad Wrap</label><br>
+            <input type="radio" name="sandwich" id="TotoWrap" value="TotoWrap"/>
+            <label for="TotoWrap">Toto Wrap</label>
+
+            <p><b>Wednesday</b></p>
+            <input type="radio" name="sandwich" id="RedPepperHummus" value="RedPepperHummus"/>
+            <label for="RedPepperHummus">Red Pepper Hummus</label><br>
+            <input type="radio" name="sandwich" id="RoastedTurkey" value="RoastedTurkey"/>
+            <label for="RoastedTurkey">Roasted Turkey</label>
+
+            <p><b>Thursday</b></p>
+            <input type="radio" name="sandwich" id="CarrotGingerHummusWrap" value="CarrotGingerHummusWrap"/>
+            <label for="CarrotGingerHummusWrap">Carrot-Ginger Hummus Wrap</label><br>
+            <input type="radio" name="sandwich" id="EggSalad" value="EggSalad"/>
+            <label for="EggSalad">Egg Salad</label>
+
+            <p><b>Friday</b></p>
+            <input type="radio" name="sandwich" id="DadoWrap" value="DadoWrap"/>
+            <label for="DadoWrap">Dado Wrap</label><br>
+            <input type="radio" name="sandwich" id="TunaSalad" value="TunaSalad"/>
+            <label for="TunaSalad">Tuna Salad</label>
+            <hr>
+
+            <input type="checkbox" id="GlutenFreeBread" value="GlutenFreeBread"/>
+            <label for="GlutenFreeBread">Gluten Free Bread (75&cent; extra)</label>            
+        </fieldset>
+
+         <fieldset>
+            <legend>Snack</legend>
+                
+                <p><b>Snacks</b></p>
+                <input type="radio" name="Snack" id="Apple" value="Apple"/>
+                <label for="Apple">Apple</label><br>
+                <input type="radio" name="Snack" id="Banana" value="Banana"/>
+                <label for="Banana">Banana</label><br>
+                <input type="radio" name="Snack" id="PotatoChips" value="PotatoChips"/>
+                <label for="PotatoChips">Potato Chips</label>
+        </fieldset>
+
+         <fieldset>
+            <legend>Drink</legend>
+                
+                <p><b>Drinks</b></p>
+                <label for="drink"></label>
+                <select name="drink" id="drink" size="1">
+                    <option value="Tea" selected>Hot Black Tea - Keemun</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="CocaCola">Coca Cola</option>
+                </select>
+                <hr>
+
+                <input type="checkbox" id="LargeDrink" value="LargeDrink"/>
+            <label for="LargeDrink">Large Drink(75&cent; extra)</label>
+        </fieldset>
+        <br>
+            
+            <button type="submit">Place Order</button>
+    </form>
+    
+
+</body>
+</html>
